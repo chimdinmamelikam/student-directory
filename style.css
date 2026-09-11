@@ -1,0 +1,131 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f5ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background-color: #6c2bd9;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.intro h2 {
+    color: #6c2bd9;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+/* Student Grid */
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+/* Student Card */
+
+.student-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card h3 {
+    color: #6c2bd9;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.student-card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.student-card strong {
+    color: #333;
+}
+
+.bio {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #555;
+    font-style: italic;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.7rem;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
